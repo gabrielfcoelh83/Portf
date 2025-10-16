@@ -5,8 +5,6 @@ import Avatar from "../../../../assets/images/avatar.png"
 import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
-// Using the actual CV file present in the workspace. Filename contains spaces.
-// Consider renaming the file to remove spaces (e.g. CV-Gabriel-fortes-coelho.pdf) for reliability.
 import CV from "../../../../assets/images/pdfs/CV Gabriel-fortes-coelho.pdf"
 
 const HeroSection: React.FC = () => {
@@ -50,7 +48,7 @@ const HeroSection: React.FC = () => {
     };
 
     const handleEmail = () => {
-        const emailAddress = 'example@example.com';
+        const emailAddress = 'gabrielfcoelh83@gmail.com';
         const subject = 'Subject';
         const body = 'Hello! I saw your portfolio...';
 
@@ -83,7 +81,9 @@ const HeroSection: React.FC = () => {
                             <Typography color="primary.contrastText" variant="h1" pb={2} textAlign="center">
                                 Gabriel Fortes Coelho
                             </Typography>
-                            <Typewriter text="I'm a Software Engineer" delay={120} variant="h2" color="primary.contrastText" />
+                            <Typography variant="h2" color="primary.contrastText" pb={2} textAlign="center">
+                                Desenvolvedor Full Stack
+                            </Typography>
                             <Box mt={3}>
                                 <Box display="flex" justifyContent="center" gap={3}>
                                     <Box sx={{ width: { xs: '83%', md: '33.333%' } }}>
@@ -98,7 +98,7 @@ const HeroSection: React.FC = () => {
                                         <StyledButton onClick={() => handleEmail()}>
                                             <EmailIcon />
                                             <Typography>
-                                                Contact me
+                                                Contato
                                             </Typography>
                                         </StyledButton>
                                     </Box>

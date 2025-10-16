@@ -59,10 +59,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </Typography>
             <Box display="flex" gap={1} pt={2}>
                 <Box sx={{ width: '50%' }}>
-                    <StyledButton onClick={() => window.open(websiteURL)}>View Project</StyledButton>
+                    <StyledButton onClick={() => window.open(websiteURL)}>Meus projetos</StyledButton>
                 </Box>
                 <Box sx={{ width: '50%' }}>
-                    <StyledButton onClick={() => window.open(codeURL)}>View Code</StyledButton>
+                    <StyledButton onClick={() => window.open(codeURL)}>Ver Código</StyledButton>
                 </Box>
             </Box>
         </StyledCard>

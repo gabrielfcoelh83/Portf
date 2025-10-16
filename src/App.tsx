@@ -1,17 +1,18 @@
-import AboutSection from "./Pages/Home/sections/AboutSection/AboutSection"
-import HeroSection from "./Pages/Home/sections/HeroSection/HeroSection"
-import Navbar from "./components/Navbar/Navbar"
-import ProjectsSection from "./Pages/Home/sections/ProjectsSection/ProjectsSection"
+
+import About from "./pages/Home/sections/About/About"
+import Hero from "./pages/Home/sections/Hero/Hero"
+import Navbar from "./components/NavBar/NavBar"
 import Footer from "./components/Footer/Footer"
+import Projects from "./pages/Home/sections/Projects/Projects"
 
 const App: React.FC = () => {
 
   return (
     <>
       <Navbar />
-      <HeroSection />
-      <AboutSection />
-      <ProjectsSection />
+      <Hero />
+      <About />
+      <Projects />
       <Footer />
     </>
   )

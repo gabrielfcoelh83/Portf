@@ -16,12 +16,12 @@ const Footer: React.FC = () => {
                         <IconButton onClick={() => window.open("https://www.linkedin.com/")}> 
                             <LinkedInIcon />
                         </IconButton>
-                        <IconButton href="mailto:example@example.com" target="_blank">
+                        <IconButton href="mailto:gabrielfcoelh83@gmail.com" target="_blank">
                             <EmailIcon />
                         </IconButton>
                     </Box>
                     <Typography textAlign="center">
-                        © 2024 Gabriel Fortes Coelho - All rights reserved
+                        © 2025 Gabriel Fortes Coelho - All rights reserved
                     </Typography>
                 </Container>
             </Box>
