@@ -24,10 +24,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     const StyledImg = styled("img")(({ theme }) => ({
         width: "100%",
         objectFit: "contain",
-        height: "80vw",
+        maxHeight: "80vh",
         padding: "10px 0",
         [theme.breakpoints.up('md')]: {
-            height: "45vh",
+            maxHeight: "45vh",
         },
     }));
 
@@ -50,7 +50,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <Typography >
                 {subtitle}
             </Typography>
-            <StyledImg src={srcImg} />
+            <StyledImg src={srcImg} alt={title} />
             <Typography>
                 {description}
             </Typography>
