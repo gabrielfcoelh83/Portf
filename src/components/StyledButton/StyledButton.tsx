@@ -1,33 +1,21 @@
-import { styled } from "@mui/material/styles";
-import React from "react";
+import React from 'react';
+import { Button, styled } from '@mui/material';
+import type { ButtonProps } from '@mui/material';
 
-interface StyledButtonProps {
-    children: React.ReactNode;
-}
-const StyledButton: React.FC<StyledButtonProps> = ({ children }) => {
+const Root = styled(Button)(({ theme }) => ({
+  color: theme.palette.primary.contrastText,
+  border: `1px solid ${theme.palette.primary.contrastText}`,
+  backgroundColor: 'transparent',
+  textTransform: 'none',
+  width: '100%',
+  padding: theme.spacing(1, 2),
+  '&:hover': {
+    backgroundColor: theme.palette.action.hover,
+  },
+}));
 
-    const StyledButton = styled("button")(({ theme })  => ({
-       backgroundColor: "transparent",
-       border: "1px solid ${theme.palette.primary.contrastText}",
-       borderRadius: "3px",
-       padding: "5px 15px",
-       width: "100%",
-       color: theme.palette.primary.contrastText,
-       display: "inline-flex",
-       alignItems: "center",
-       justifyContent: "center",
-       gap: "10px",
-       '&:hover': {
-       backgroundColor: theme.palette.primary.contrastText,
-    }
-    }))
-  return (
-    <>
-      <StyledButton>
-        {children}
-      </StyledButton>
-    </>
-  )
-}
+const StyledButton = React.forwardRef<HTMLButtonElement, ButtonProps>(function StyledButton(props, ref) {
+  return <Root ref={ref} {...props} />;
+});
 
 export default StyledButton;
